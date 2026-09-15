@@ -1,0 +1,28 @@
+{
+  "model_type": "TF-IDF + Logistic Regression Pipeline",
+  "dataset_name": "Email & SMS Spam Collection Dataset",
+  "total_samples": 6700,
+  "ham_samples": 4500,
+  "spam_samples": 2200,
+  "train_samples": 5360,
+  "test_samples": 1340,
+  "metrics": {
+    "accuracy": 100.0,
+    "precision": 100.0,
+    "recall": 100.0,
+    "f1_score": 100.0,
+    "true_negatives": 900,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "true_positives": 440
+  },
+  "pipeline_config": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 6000,
+    "sublinear_tf": true,
+    "classifier": "LogisticRegression(C=1.0, max_iter=1000, solver='lbfgs')"
+  }
+}

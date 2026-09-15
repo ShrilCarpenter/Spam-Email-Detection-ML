@@ -1,0 +1,19 @@
+email-spam-detector/
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # Optional: Automation for CI/CD pipelines
+│
+├── backend/                    # All Backend Engine & AI files
+│   ├── dataset/
+│   │   └── mail_data.csv       # Raw text data matrix
+│   ├── models/
+│   │   ├── classifier.pkl      # Serialized mathematical weights
+│   │   └── vectorizer.pkl      # Serialized vocabulary dictionary
+│   ├── Dockerfile              # Container runtime infrastructure blueprint
+│   ├── main.py                 # FastAPI production gateway routing script
+│   ├── requirements.txt        # Production Python library dependency manifest
+│   └── train.py                # ML pipeline local pipeline construction script
+│
+└── frontend/                   # All UI presentation layer files
+    └── index.html              # Static Tailwind single-page workspace
