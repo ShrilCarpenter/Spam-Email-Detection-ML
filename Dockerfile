@@ -16,9 +16,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY backend /app
 
 # Ensure model artifacts exist (run training if not present)
-RUN python -c "import os; os.path.exists('models/classifier.pkl') or __import__('train').train_spam_model()"
+RUN python -c "import os; os.path.exists('ml/spam_classifier.pkl') or __import__('ml.train_model').train_and_evaluate()"
 
 EXPOSE 8000
 
-# Run FastAPI server on 0.0.0.0:8000
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run FastAPI server on dynamic $PORT (defaulting to 8000)
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
