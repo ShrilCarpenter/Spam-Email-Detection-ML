@@ -1,5 +1,12 @@
 # SpamShield — Production Email Spam Detection System
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://spam-email-detector-ml.vercel.app/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
+[![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+
+> 🚀 **Live Production URL**: [https://spam-email-detector-ml.vercel.app/](https://spam-email-detector-ml.vercel.app/)
+
 A clean, modern, production-quality full-stack web application for real-time email spam detection powered by Machine Learning (TF-IDF + Logistic Regression Pipeline).
 
 Built around a fast, distraction-free workflow: **Paste Email → Click Check Email → Get Clear Prediction & Probability**.
